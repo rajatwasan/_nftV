@@ -1,0 +1,40 @@
+{
+  "name": "nft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run --network goerli scripts/deploy.ts",
+    "verify": "hardhat verify --network goerli",
+    "upload": "npx tsc scripts/pinata.ts && node scripts/pinata.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-viem": "^2.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@types/chai": "^4.2.0",
+    "@types/chai-as-promised": "^7.1.6",
+    "@types/form-data": "^2.5.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": "^22.5.4",
+    "chai": "^4.2.0",
+    "hardhat": "^2.22.10",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typescript": "^5.5.4",
+    "viem": "^2.7.6"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "pinata": "^1.1.0"
+  }
+}
